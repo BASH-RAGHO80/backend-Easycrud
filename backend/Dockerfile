@@ -1,7 +1,7 @@
 FROM maven:3.8.3-openjdk-17
-WORKDIR /app
-COPY . .
+COPY . /opt
+WORKDIR /opt
 RUN mvn clean package
-WORKDIR /app/target
+WORKDIR target/
 EXPOSE 8080
 ENTRYPOINT ["java","-jar","student-registration-backend-0.0.1-SNAPSHOT.jar"]
