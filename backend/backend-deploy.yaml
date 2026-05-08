@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: bashragho80/backend:v1
+          image: bashragho80/backendeasycrud:v1
           ports:
             - containerPort: 8080
           imagePullPolicy: Always
